@@ -1,274 +1,32 @@
+extends includes/layout.pug
 
-<!DOCTYPE html>
-<html lang="en" class="loading">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>传感器课后习题（安理版） - 树叶飞舞之处，火亦生生不息</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="google" content="notranslate" />
-    <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="计算机组成原理速成课数据库速成课
-第一章1.传感器的信号调理一般有哪几种类型？传感器输出接口标准化有何意义？信号调理大致分为五种类型：电平调整、线性化、信号形式变换、滤波、阻抗匹配。输出接口标准化的,"> 
-    <meta name="author" content="元元学长"> 
-    <link rel="alternative" href="atom.xml" title="树叶飞舞之处，火亦生生不息" type="application/atom+xml"> 
-    <link rel="icon" href="/img/favicon.png"> 
-    
-    
-<link rel="stylesheet" href="/css/diaspora.css">
+block content
+  #post
+    if top_img === false
+      include includes/header/post-info.pug
 
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({
-              google_ad_client: "ca-pub-8691406134231910",
-              enable_page_level_ads: true
-         });
-    </script>
-    <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-    </script>
-<meta name="generator" content="Hexo 5.3.0"></head>
-
-<body class="loading">
-    <span id="config-title" style="display:none">树叶飞舞之处，火亦生生不息</span>
-    <div id="loader"></div>
-    <div id="single">
-    <div id="top" style="display: block;">
-    <div class="bar" style="width: 0;"></div>
-    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
-    <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">传感器课后习题（安理版）</h3>
-    <div class="social">
-        <div>
-            <div class="share">
-                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
-            </div>
-            <div id="qr"></div>
-        </div>
-    </div>
-    <div class="scrollbar"></div>
-</div>
-
-    <div class="section">
-        <div class="article">
-    <div class='main'>
-        <h1 class="title">传感器课后习题（安理版）</h1>
-        <div class="stuff">
-            <span>四月 29, 2021</span>
-            
-
-        </div>
-        <div class="content markdown">
-            <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ho4y1f7hC">计算机组成原理速成课</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ov41177ga">数据库速成课</a></p>
-<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h3 id="1-传感器的信号调理一般有哪几种类型？传感器输出接口标准化有何意义？"><a href="#1-传感器的信号调理一般有哪几种类型？传感器输出接口标准化有何意义？" class="headerlink" title="1.传感器的信号调理一般有哪几种类型？传感器输出接口标准化有何意义？"></a>1.传感器的信号调理一般有哪几种类型？传感器输出接口标准化有何意义？</h3><p>信号调理大致分为五种类型：电平调整、线性化、信号形式变换、滤波、阻抗匹配。<br>输出接口标准化的好处：相关人员就不比深入了解各功能模块的内部原理及结构，就可以对整个系统进行设计、实现及维护。</p>
-<h3 id="2-与有源传感器比较，无源传感器存在哪些不利因素？"><a href="#2-与有源传感器比较，无源传感器存在哪些不利因素？" class="headerlink" title="2.与有源传感器比较，无源传感器存在哪些不利因素？"></a>2.与有源传感器比较，无源传感器存在哪些不利因素？</h3><p>由于需要为 敏感元件提供激励源，无源传感器通常比有源传感器有更多的引线，传感器的总体灵敏度也受激励信号幅度的影响。此外，激励源的存在可能增加在易燃，易爆气体环境中引起爆炸的危险，在某些特殊的场合需要引起足够的重视</p>
-<h3 id="3-物联网用传感器一般有哪些共性要求或特点？应用于野外环境监测的无线传感器一般还应主要注重哪些要求？"><a href="#3-物联网用传感器一般有哪些共性要求或特点？应用于野外环境监测的无线传感器一般还应主要注重哪些要求？" class="headerlink" title="3.物联网用传感器一般有哪些共性要求或特点？应用于野外环境监测的无线传感器一般还应主要注重哪些要求？"></a>3.物联网用传感器一般有哪些共性要求或特点？应用于野外环境监测的无线传感器一般还应主要注重哪些要求？</h3><p>物联网对2传感器最普遍的要求除了性价比高、尺寸小、低功耗，还有提高性能和方便使用，具有便于实现网络化测量的接口和采用自能化的方式也是必须的。<br>要求传感器的可靠性高，抗干扰能力强。</p>
-<h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><h3 id="1-传感器的总特性主要包括哪些？传感器的工作特性包括哪些？"><a href="#1-传感器的总特性主要包括哪些？传感器的工作特性包括哪些？" class="headerlink" title="1.传感器的总特性主要包括哪些？传感器的工作特性包括哪些？"></a>1.传感器的总特性主要包括哪些？传感器的工作特性包括哪些？</h3><blockquote>
-<p>传感器的总特性主要包括传感器的自身特性及其与被测对象和后接仪器组成的测量系统的输入和输出匹配。传感器的自身特性主要是机械特性和工作特性，其中工作特性全包括静态特性、动态特性、环境特性及可靠性等。</p>
-</blockquote>
-<h3 id="2-传感器的静态特性是什么？主要由哪些性能指标描述？"><a href="#2-传感器的静态特性是什么？主要由哪些性能指标描述？" class="headerlink" title="2.传感器的静态特性是什么？主要由哪些性能指标描述？"></a>2.传感器的静态特性是什么？主要由哪些性能指标描述？</h3><p>静态特性表示的是传感器在被测量处于稳定状态时的输出与输入关系，主要指标包括灵敏度、线性度、迟滞和重复性等。</p>
-<h3 id="3-传感器的灵敏度如何定义？若某压力传感器的灵敏度为1-5mV-V-MPa-，说明该传感器对应多大的压力和多少伏激励电压时有1-5mV的输出量变化。"><a href="#3-传感器的灵敏度如何定义？若某压力传感器的灵敏度为1-5mV-V-MPa-，说明该传感器对应多大的压力和多少伏激励电压时有1-5mV的输出量变化。" class="headerlink" title="3.传感器的灵敏度如何定义？若某压力传感器的灵敏度为1.5mV(V.MPa)，说明该传感器对应多大的压力和多少伏激励电压时有1.5mV的输出量变化。"></a>3.传感器的灵敏度如何定义？若某压力传感器的灵敏度为1.5mV(V.MPa)，说明该传感器对应多大的压力和多少伏激励电压时有1.5mV的输出量变化。</h3><p>定义：灵敏度指传感器的输入量和输出增量之比。<br>在1Mpa的压力和1V的电压下有1.5mV的输出变化量。</p>
-<h3 id="4-为何只研究传感器对正弦周期信号和阶跃信号的响应就可反映传感器的特性？"><a href="#4-为何只研究传感器对正弦周期信号和阶跃信号的响应就可反映传感器的特性？" class="headerlink" title="4.为何只研究传感器对正弦周期信号和阶跃信号的响应就可反映传感器的特性？"></a>4.为何只研究传感器对正弦周期信号和阶跃信号的响应就可反映传感器的特性？</h3><p>传感器的动态特性要从时域和频域两个方面分析。因此，在时域类研究对阶跃函数的响应特性，在频域类研究对正弦函数的频率响应特性。采用阶跃输入研究传感器时域动态响应特性时，用上升时间tr响应时间ts和过冲量（或超掉量）等参数来综合描述。</p>
-<h3 id="5-一阶、二阶传感器各有哪些动态特性指标？"><a href="#5-一阶、二阶传感器各有哪些动态特性指标？" class="headerlink" title="5.一阶、二阶传感器各有哪些动态特性指标？"></a>5.一阶、二阶传感器各有哪些动态特性指标？</h3><p>一阶传感器：具有简单能量变换的传感器，如多数物性型传感器，其动态性能可用一阶微分方程来描述。<br>二阶传感器：在电气系统中具有R、L、C的电路呈现二阶频率响应。同样，对具有阻尼、质量、和弹簧的机械系统，如测力和测量震动的传感器，也有类似特性。</p>
-<h3 id="6-如何合理选择传感器？选择传感器的过程一般从哪个环节开始？"><a href="#6-如何合理选择传感器？选择传感器的过程一般从哪个环节开始？" class="headerlink" title="6.如何合理选择传感器？选择传感器的过程一般从哪个环节开始？"></a>6.如何合理选择传感器？选择传感器的过程一般从哪个环节开始？</h3><p>整体需要原则：传感器的技术指标是作为孤立产品或部件给出，不是测量系统的整体目标，因此，应按测量系统整体设计要求，是所选传感器和测量方法适用于实际场合。</p>
-<p>高可靠性原则：在多种可选传感器满足基本技术指标的情况下，把可靠性列为首要考虑；在满足性能的前提下，尽量采用元器件少的简单方案，使得系统安全性可靠性高。</p>
-<p>高性价比的原则：在符合要求的同时注重经济性，除了传感器造价低外，其使用和维护成本也要低。</p>
-<p>合理的选用包括合理选择和正确使用，传感器的选用无固定模式。</p>
-<h1 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h1><h3 id="1-测量电阻有哪些常见方法？各适用与何种情况？"><a href="#1-测量电阻有哪些常见方法？各适用与何种情况？" class="headerlink" title="1.测量电阻有哪些常见方法？各适用与何种情况？"></a>1.测量电阻有哪些常见方法？各适用与何种情况？</h3><blockquote>
-<p>偏转法。最简单的偏转法是恒压供电测电阻电流，或者恒压供电测电阻电压。<br>分压法。分压器方法常用于测量组织变化很大的传感器，以及非线性传感器的电阻如负温度系数热敏电阻。<br>电桥法。用于测量小阻值的变化，最简单的方法是平衡测量法，利用电动或手动反馈调节标准电阻器的值。</p>
-</blockquote>
-<h3 id="2-对于单臂敏感电阻工作的电桥，采用不平衡电压作为输出时，该检测电路的灵敏度与敏感电阻的变化程度有何种关系？什么情况下灵敏度最高？"><a href="#2-对于单臂敏感电阻工作的电桥，采用不平衡电压作为输出时，该检测电路的灵敏度与敏感电阻的变化程度有何种关系？什么情况下灵敏度最高？" class="headerlink" title="2.对于单臂敏感电阻工作的电桥，采用不平衡电压作为输出时，该检测电路的灵敏度与敏感电阻的变化程度有何种关系？什么情况下灵敏度最高？"></a>2.对于单臂敏感电阻工作的电桥，采用不平衡电压作为输出时，该检测电路的灵敏度与敏感电阻的变化程度有何种关系？什么情况下灵敏度最高？</h3><blockquote>
-<p>非线性关系，在R1=R4；R2=R3的情况下灵敏度最高。</p>
-</blockquote>
-<h3 id="3-对于敏感电阻变化程度接近或超过100-的电阻传感器，采用相邻桥臂电阻比值为1的电桥会产生严重非线性，有哪些改进方法？"><a href="#3-对于敏感电阻变化程度接近或超过100-的电阻传感器，采用相邻桥臂电阻比值为1的电桥会产生严重非线性，有哪些改进方法？" class="headerlink" title="3.对于敏感电阻变化程度接近或超过100%的电阻传感器，采用相邻桥臂电阻比值为1的电桥会产生严重非线性，有哪些改进方法？"></a>3.对于敏感电阻变化程度接近或超过100%的电阻传感器，采用相邻桥臂电阻比值为1的电桥会产生严重非线性，有哪些改进方法？</h3><blockquote>
-<p>一是采用模拟或数字技术校正非线性输出，二是牺牲灵敏度换取线性。</p>
-</blockquote>
-<h3 id="4-根据电容变化的原理不同，电容传感器有哪几类？各自的主要用途是什么？"><a href="#4-根据电容变化的原理不同，电容传感器有哪几类？各自的主要用途是什么？" class="headerlink" title="4.根据电容变化的原理不同，电容传感器有哪几类？各自的主要用途是什么？"></a>4.根据电容变化的原理不同，电容传感器有哪几类？各自的主要用途是什么？</h3><blockquote>
-<p>1、变极距型电容传感器：差动式比单极式灵敏度提高一倍，且非线性误差大为减小。由于结构上的对称性，它还能有效地补偿温度变化所造成的误差。由于变极距型的分辨力极高，可测小至0.01μm的线位移，故在微位移检测中应用最广。<br>2、变面积型电容传感器：变面积型电容传感器与变极距型相比，其灵敏度较低。这种传感器的输出特性呈线性。因而其量程不受线性范围的限制，适合于测量较大的直线位移和角位移。在实际应用中，也采用差动式结构，以提高灵敏度。<br>3、变介质型电容传感器：可用于非导电散材物料的物位测量</p>
-</blockquote>
-<h3 id="5-从电容传感器的构成看，有直接作用式和间接作用式，各有何特点和适用场合？"><a href="#5-从电容传感器的构成看，有直接作用式和间接作用式，各有何特点和适用场合？" class="headerlink" title="5.从电容传感器的构成看，有直接作用式和间接作用式，各有何特点和适用场合？"></a>5.从电容传感器的构成看，有直接作用式和间接作用式，各有何特点和适用场合？</h3><blockquote>
-<p>直接作用式：直接作用式的电容传感器就是电容变换器，不需要弹性元件而直接感受被测量。<br>间接作用式：间接作用式电容传感器由弹性元件和电容变换器组成。由敏感元件感受被测量，输出中间变量。感根据弹性元件的不同，可以构成压力，位移加速度等传感器。</p>
-</blockquote>
-<h3 id="6-电感传感器主要由哪些元件组成？按电感变化原理不同，电感传感器有哪几类？"><a href="#6-电感传感器主要由哪些元件组成？按电感变化原理不同，电感传感器有哪几类？" class="headerlink" title="6.电感传感器主要由哪些元件组成？按电感变化原理不同，电感传感器有哪几类？"></a>6.电感传感器主要由哪些元件组成？按电感变化原理不同，电感传感器有哪几类？</h3><blockquote>
-<p>由铁芯，衔铁，线圈组成。<br>分为：变气隙型自感式传感器，气隙面积变化型自感传感器，螺管型自感式传感器。</p>
-</blockquote>
-<h3 id="7-简述电涡流传感器的原理、结构和性能特点，说明电涡流传感器可直接测量的参量，以及根据其直接测量量可间接测量的其他物理量。"><a href="#7-简述电涡流传感器的原理、结构和性能特点，说明电涡流传感器可直接测量的参量，以及根据其直接测量量可间接测量的其他物理量。" class="headerlink" title="7.简述电涡流传感器的原理、结构和性能特点，说明电涡流传感器可直接测量的参量，以及根据其直接测量量可间接测量的其他物理量。"></a>7.简述电涡流传感器的原理、结构和性能特点，说明电涡流传感器可直接测量的参量，以及根据其直接测量量可间接测量的其他物理量。</h3><blockquote>
-<p>当金属导体置于变化的磁场中或者在磁场中运动时，在金属导体内部会产生感应电流，由于这种电流在金属导体内是自身闭合的，因此称为电涡流或者涡流。<br>涡流传感器结构简单、使用方便，广泛应用于位移、震动和材料参数的测量，以及无损探伤等。其最大的特点是可对一些参数进行非接触测量，其测量范围和精度取决于传感器的结构尺寸、线圈匝数以及励磁频率等因素。涡流传感器分为高频反射式和低频透射式两种。</p>
-</blockquote>
-<h1 id="第四章1"><a href="#第四章1" class="headerlink" title="第四章1"></a>第四章1</h1><h3 id="1-弹性元件的特性用哪些参数表示？其固有频率高有何益处？如何估计固有频率？"><a href="#1-弹性元件的特性用哪些参数表示？其固有频率高有何益处？如何估计固有频率？" class="headerlink" title="1.弹性元件的特性用哪些参数表示？其固有频率高有何益处？如何估计固有频率？"></a>1.弹性元件的特性用哪些参数表示？其固有频率高有何益处？如何估计固有频率？</h3><blockquote>
-<p>弹性元件的特性用k表示刚度用K代表灵敏度。<br>固有频率高可以减少动态误差。<br>一般通过计算和实验结合的方式估计。计算时给出最低固有频率，也可以用式子 f=来计算。</p>
-</blockquote>
-<h3 id="2-什么是压阻效应？固态压阻器件有何结构特性？如何补偿压阻系数的温度影响？"><a href="#2-什么是压阻效应？固态压阻器件有何结构特性？如何补偿压阻系数的温度影响？" class="headerlink" title="2.什么是压阻效应？固态压阻器件有何结构特性？如何补偿压阻系数的温度影响？"></a>2.什么是压阻效应？固态压阻器件有何结构特性？如何补偿压阻系数的温度影响？</h3><blockquote>
-<p>压阻效应 用来描述半导体在外力作用下，其电阻发生改变的现象。这种变化仅对材料的电阻率产生影响。与压电效应不同，压阻效应不能用于在设备上产生电压。<br>在圆形硅膜片上扩散得到4个p型电阻，构成惠斯通电桥的四臂。<br>将电桥的4个桥臂的扩散电阻做的大小相同，温度系数相同，电桥的零位温漂就会很小。</p>
-</blockquote>
-<h3 id="3-什么是压电效应？带前置放大的压电元件的等效电路有哪两种？各适用于什么应用场合？"><a href="#3-什么是压电效应？带前置放大的压电元件的等效电路有哪两种？各适用于什么应用场合？" class="headerlink" title="3.什么是压电效应？带前置放大的压电元件的等效电路有哪两种？各适用于什么应用场合？"></a>3.什么是压电效应？带前置放大的压电元件的等效电路有哪两种？各适用于什么应用场合？</h3><blockquote>
-<p>压电效应：某些电介质在沿一定方向上受到外力的作用而变形时，其内部会产生极化现象，同时在它的两个相对表面上出现正负相反的电荷。当外力去掉后，它又会恢复到不带电的状态，这种现象称为正压电效应。<br>电压放大器和电荷放大器</p>
-</blockquote>
-<h3 id="4-为何压电传感器不能测量静态信号（从等效电路的输入输出幅值关系分析说明）？"><a href="#4-为何压电传感器不能测量静态信号（从等效电路的输入输出幅值关系分析说明）？" class="headerlink" title="4.为何压电传感器不能测量静态信号（从等效电路的输入输出幅值关系分析说明）？"></a>4.为何压电传感器不能测量静态信号（从等效电路的输入输出幅值关系分析说明）？</h3><blockquote>
-<p>不不能，压电传感器测量只能测量动态信号，因为， 压电式传感器是一种典型的自发电式传感器，他是以某些晶体受力后在其表面产生电荷的压电效应为转换原理的传感器。 某些晶体，当沿着一定方向受到外力作用时，内部就产生极化现象，同时在某两个表面上便产生符号相反的电荷。当外力去掉后，又恢复到不带电的状态。当作用力方向改变时，电荷的极性也随之改变，晶体受力所产生的电荷量与外力的大小成正比。上述现象称之为正压电效应。压电式传感器大都是利用压电材料的正压电效应制成的。 从压电传感器的原理可以看出，它是一个动态的变化过程，如果测量变化缓慢的应力信号这种压电变化会消失而反应不出来。所以测量不出来静态信号</p>
-</blockquote>
-<h3 id="5-什么是外光电效应、内光电效应？什么是光电导效应和光伏效应？各列举一两例基于这几个效应的对应器件。"><a href="#5-什么是外光电效应、内光电效应？什么是光电导效应和光伏效应？各列举一两例基于这几个效应的对应器件。" class="headerlink" title="5.什么是外光电效应、内光电效应？什么是光电导效应和光伏效应？各列举一两例基于这几个效应的对应器件。"></a>5.什么是外光电效应、内光电效应？什么是光电导效应和光伏效应？各列举一两例基于这几个效应的对应器件。</h3><blockquote>
-<p>外光电效应：金属在光照射下电子溢出金属表面的现象</p>
-</blockquote>
-<p>内光电效应：内光电效应是光电效应的一种，主要由于光量子作用，引发物质电化学性质变化（比如电阻率改变，这是与外光电效应的区别，外光电效应则是逸出电子）。内光电效应又可分为光电导效应和光生伏特效应。</p>
-<p>光电导效应，又称为光电效应、光敏效应，光照射到某些物体上后，引起其电性能变化的一类光致电改变现象的总称。当光照射到半导体材料时，材料吸收光子的能量，使非传导态电子变为传导态电子，引起载流子浓度增大，因而导致材料电导率增大。<br>光生伏特效应简称为光伏效应，指光照使不均匀半导体或半导体与金属组合的不同部位之间产生电位差的现象。</p>
-<h1 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h1><h3 id="1-简述热电偶的测温原理和方法。产生热电势需要满足什么条件？"><a href="#1-简述热电偶的测温原理和方法。产生热电势需要满足什么条件？" class="headerlink" title="1.简述热电偶的测温原理和方法。产生热电势需要满足什么条件？"></a>1.简述热电偶的测温原理和方法。产生热电势需要满足什么条件？</h3><blockquote>
-<p>（1）把两种不同的导体或半导体连接成闭合回路，回路的两个接点温度不同时，回路内就会产生热电势，这种现象称为热电效应。热电偶测温计就是利用这个原理工作的。</p>
-</blockquote>
-<p>（2）常用的热电偶有铂铑—铂、镍铬—镍硅、铜—铜镍（康铜）等。</p>
-<h3 id="2-什么是霍尔效应？霍尔元件为何容易受温度影响？如何补偿环境温度变化对霍尔器件输出的影响？"><a href="#2-什么是霍尔效应？霍尔元件为何容易受温度影响？如何补偿环境温度变化对霍尔器件输出的影响？" class="headerlink" title="2.什么是霍尔效应？霍尔元件为何容易受温度影响？如何补偿环境温度变化对霍尔器件输出的影响？"></a>2.什么是霍尔效应？霍尔元件为何容易受温度影响？如何补偿环境温度变化对霍尔器件输出的影响？</h3><blockquote>
-<p>霍尔效应：将导体薄片或半导体薄片置于均匀电场中，沿薄片长度方向控制电流时，将在宽度方向上产生一个横向电场。</p>
-</blockquote>
-<p>影响霍尔元件温度特性的主要因素是霍尔电压、电流端子和霍尔端子间的内阻。</p>
-<p>输入端并联电阻或者采用热敏元件。</p>
-<h3 id="3-什么是磁致伸缩效应和压磁效应？"><a href="#3-什么是磁致伸缩效应和压磁效应？" class="headerlink" title="3.什么是磁致伸缩效应和压磁效应？"></a>3.什么是磁致伸缩效应和压磁效应？</h3><blockquote>
-<p>所有的磁性材料都在某种程度上具有磁致伸缩效应，磁致伸缩效应是由于自旋－轨道耦合能和物质的弹性能平衡而产生的。磁致伸缩产生也是满足能量最小条件的必然结果。从自由能极小的观点来看，磁性材料的磁化状态发生变化时，其自身的形状和体积都要改变，因为这样才能使整个体系的总能量最小。</p>
-</blockquote>
-<h3 id="4-简述超声波传感器的工作原理，采用超声波测距时为何要考虑温度影响？"><a href="#4-简述超声波传感器的工作原理，采用超声波测距时为何要考虑温度影响？" class="headerlink" title="4.简述超声波传感器的工作原理，采用超声波测距时为何要考虑温度影响？"></a>4.简述超声波传感器的工作原理，采用超声波测距时为何要考虑温度影响？</h3><blockquote>
-<p>通过超声发生器先将超声波发射出去，再将接收回来的超声波变换成电信号，完成这些工作的装置称为超声波传感器。</p>
-</blockquote>
-<p>在测距精度要求过高的情况下，可以实测温度进行补偿。</p>
-<h1 id="6-7章"><a href="#6-7章" class="headerlink" title="6,7章"></a>6,7章</h1><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p>1特殊性:只能进行温度相等或不想等的描述，不能对两个温度相加或相减。</p>
-<p>2.接触式测温和非接触式测温。</p>
-<p>3.接触式测温特点:这种测量方式比较直观，可靠，测量仪表也相对简单。</p>
-<p>4.非接触式测温特点:不破坏原温度场，</p>
-<p>有较高测温上限，话用干测量运动物体的温度和较快变的温度。</p>
-<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p>u=0.08 所以△t=50/0.08=625℃ 又△t=t-40℃ 所以t=625+40=665℃</p>
-<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p>1.优点:灵敏度高，体积小，响应快，功耗低，价格低。</p>
-<p>2.缺点:阻值随温度表现出非线性变化，元件的互换性差。</p>
-<p>3.实用性:如果测温范围小，要求灵敏，</p>
-<p>可以用热敏电阻。范围大，精度高，则用热电阻。</p>
-<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p>1中间导体定律:在热电偶回路中，若中</p>
-<p>间导体c两端温度相同，则接入中间导体c对热电偶回路总热电势E无影响。意义:为测量热电势提供了方法和依据。</p>
-<p>2中间温度定律:两端温度为Tn和Tc的热电偶的热电势等于同种热电偶在两端温度分别为Tn，Tm，Tc时的热电势之和，Tm为Tn和Tc之间的任一温度，即</p>
-<p> E(Tn，Tc)=E(Tn，Tm)+E(Tm，Tc)式中，E(Tn，Tc)为冷端温度Tc=0，热端温度为Tn时的热电势。E(Tn，Tm)为冷端温度为 Tm，热端温度为Tn的热电势。E(Tm，Tc)为冷端温度Tc=0，热端温度为Tn的热电势。意义:为制定热电偶分度表奠定了理论基础。</p>
-<h3 id="5"><a href="#5" class="headerlink" title="5"></a>5</h3><p> 34.84mv</p>
-<h3 id="6、"><a href="#6、" class="headerlink" title="6、"></a>6、</h3><p>折射式光纤温度传感器</p>
-<h3 id="7"><a href="#7" class="headerlink" title="7"></a>7</h3><p>1.线阵:适用于扫描仪，传真机和复印机等都是采用线阵CCD作匀速扫描运动的系统。</p>
-<p>2.面阵:适用于自动控制和自动测量中的图像采集和识别。</p>
-<h3 id="8"><a href="#8" class="headerlink" title="8"></a>8</h3><p>1.共同点:都能进行亮度控制，都使用光敏二极管。不同:照度传感器需要亮度放大器。亮度传感器需要一个外加元件。</p>
-<p>2.照度传感器用途:主要用于灯具的自动</p>
-<p>亮/灭控制，如路灯，广告灯，背景亮度自动调节。</p>
-<p>3.亮度传感器用途:可根据环境亮度自动调节背光源亮度。</p>
-<h3 id="9"><a href="#9" class="headerlink" title="9"></a>9</h3><p>光纤电压传感器</p>
-
-            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
-            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
-                <source type="audio/mpeg" src="">
-            </audio>
-            
-                <ul id="audio-list" style="display:none">
-                    
-                        
-                            <li title='0' data-url='https://c.y.qq.com/base/fcgi-bin/u?__=FO1UVRP'></li>
-                        
-                    
-                        
-                            <li title='1' data-url='https://c.y.qq.com/base/fcgi-bin/u?__=apT5IzV'></li>
-                        
-                    
-                        
-                            <li title='2' data-url='https://c.y.qq.com/base/fcgi-bin/u?__=MBGae4C'></li>
-                        
-                    
-                        
-                            <li title='3' data-url='https://c.y.qq.com/base/fcgi-bin/u?__=2PVzD'></li>
-                        
-                    
-                </ul>
-            
-        </div>
+    article#article-container.post-content!=page.content
+    include includes/post/post-copyright.pug
+    .tag_share
+      if (theme.post_meta.post.tags)
+        .post-meta__tag-list
+          each item, index in page.tags.data
+            a(href=url_for(item.path)).post-meta__tags #[=item.name]
+      include includes/third-party/share/index.pug
         
-    <div id='gitalk-container' class="comment link"
-		data-enable='false'
-        data-ae='false'
-        data-ci=''
-        data-cs=''
-        data-r=''
-        data-o=''
-        data-a=''
-        data-d='false'
-    >查看评论</div>
+    if theme.reward.enable
+      !=partial('includes/post/reward', {}, {cache: true})
 
+    //- ad
+    if theme.ad && theme.ad.post
+      .ads-wrap!=theme.ad.post
 
-    </div>
-    
-</div>
+    if theme.post_pagination
+      include includes/pagination.pug
+    if theme.related_post && theme.related_post.enable
+      != related_posts(page,site.posts)
 
-
-    </div>
-</div>
-</body>
-
-
-<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
-<script src="/js/plugin.js"></script>
-<script src="/js/typed.js"></script>
-<script src="/js/diaspora.js"></script>
-<script src="/js/beijing.js"></script>
-
-
-<link rel="stylesheet" href="/photoswipe/photoswipe.css">
-<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
-
-
-<script src="/photoswipe/photoswipe.min.js"></script>
-<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
-
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-            <div class="pswp__top-bar">
-                <!--  Controls are self-explanatory. Order can be changed. -->
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-</html>
+    if page.comments !== false && theme.comments && theme.comments.use
+      - var commentsJsLoad = true
+      !=partial('includes/third-party/comments/index', {}, {cache: true})
+      
