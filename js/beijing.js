@@ -18,7 +18,7 @@
             l: script_len, //长度，用于生成id用
             z: get_attribute(script, "zIndex", -1), //z-index
             o: get_attribute(script, "opacity", 0.8), //opacity
-            c: get_attribute(script, "color", "255,255,255"), //color
+            c: get_attribute(script, "color", "0,253,253"), //color
             n: get_attribute(script, "count", 350) //count
         };
     }
@@ -54,7 +54,7 @@
                         d = (e.max - dist) / e.max,
                         context.beginPath(),
                         context.lineWidth = d / 2,
-                        context.strokeStyle = "rgb(37, 25, 27)",
+                        context.strokeStyle = "#000000",
                         context.moveTo(r.x, r.y),
                         context.lineTo(e.x, e.y),
                         context.stroke());
