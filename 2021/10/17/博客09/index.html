@@ -5,14 +5,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>git连接gitee - 树叶飞舞之处，火亦生生不息</title>
+    <title>git笔记 - 树叶飞舞之处，火亦生生不息</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="一个编程小白的日常分享,git的工作流程一般情况下是这样子的
+    <meta name="description" content="一个编程小白的日常分享,一直提交不上去是由于开发工具中安装了gitee插件导致的，卸载改插件即可。
 
-1.在工作目录中添加、修改文件；2.将需要进行版本管理的文件放入暂存区域；git add .3.将暂存区域的文件提交到git仓库。git commit因此，g,"> 
+git的工作流程一般情况下是这样子的
+
+1.在工作目录中添加、修改文件；2.将需要进行版本管理的文件放入暂存区域；git,"> 
     <meta name="author" content="元元学长"> 
     <link rel="alternative" href="atom.xml" title="树叶飞舞之处，火亦生生不息" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -40,7 +42,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://yyxuezhang.top"></a>
     <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">git连接gitee</h3>
+    <h3 class="subtitle">git笔记</h3>
     <div class="social">
         <div>
             <div class="share">
@@ -55,14 +57,16 @@
     <div class="section">
         <div class="article">
     <div class='main'>
-        <h1 class="title">git连接gitee</h1>
+        <h1 class="title">git笔记</h1>
         <div class="stuff">
             <span>十月 17, 2021</span>
             
 
         </div>
         <div class="content markdown">
-            <h2 id="git的工作流程一般情况下是这样子的"><a href="#git的工作流程一般情况下是这样子的" class="headerlink" title="git的工作流程一般情况下是这样子的"></a>git的工作流程一般情况下是这样子的</h2><br/>
+            <p><code>一直提交不上去是由于开发工具中安装了gitee插件导致的，卸载改插件即可。</code></p>
+<hr>
+<h2 id="git的工作流程一般情况下是这样子的"><a href="#git的工作流程一般情况下是这样子的" class="headerlink" title="git的工作流程一般情况下是这样子的"></a>git的工作流程一般情况下是这样子的</h2><br/>
 
 <p>1.在工作目录中添加、修改文件；<br>2.将需要进行版本管理的文件放入暂存区域；git add .<br>3.将暂存区域的文件提交到git仓库。git commit<br>因此，git管理的文件有三种不同的状态：已修改，已暂存，已提交。</p>
 <h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>Git clone + gitee或者github的下载链接<br><code>eg: git clone https://gitee.com/kuangstudy/kuang_livenote.git</code><br>在本地新建git初始化：git init  </p>
@@ -78,6 +82,16 @@
 <p>设置本机绑定SSH公钥，实现免密码登录！（免密登录非常重要，码云是远程仓库，我们是平时工作在本地仓库！）</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 进入 C:\Users\86136\.ssh  目录</span><br><span class="line"># 生成公钥</span><br><span class="line">shh-keygen -t rsa</span><br><span class="line"># 生成公钥之后将文件中的.pub文件打开复制到gitee中的公钥里面，标题会根据公钥自动填充。然后点击确定在次输入密码验证即可。</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用码云新建一个仓库"><a href="#使用码云新建一个仓库" class="headerlink" title="使用码云新建一个仓库"></a>使用码云新建一个仓库</h2><p><img src="https://t1.picb.cc/uploads/2021/10/17/wPaRE0.png" alt="wPaRE0.png">  </p>
+<p>许可证：开源是否可以随意转载，开源但是不能商业使用，不能转载等等。通俗来说就是对开源仓库的限制。<code>通常建议使用GPL-3.0</code></p>
+<h2 id="git上传文件到指定仓库"><a href="#git上传文件到指定仓库" class="headerlink" title="git上传文件到指定仓库"></a>git上传文件到指定仓库</h2><blockquote>
+<p>首先用<code>git clone + 路径</code>将仓库下载至本地，然后进入和<code>.git (隐藏文件夹)</code>同级的文件目录下，右击git bash here</p>
+<blockquote>
+<p>1 git add .<br>2 git commit -m “(此处写提交信息)”<br>3 git push</p>
+</blockquote>
+</blockquote>
+<p>一直提交不上去是由于开发工具中安装了gitee插件导致的，卸载改插件即可。</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
