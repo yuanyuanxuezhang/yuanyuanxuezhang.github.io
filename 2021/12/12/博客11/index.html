@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>操作系统 - 树叶飞舞之处，火亦生生不息</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="一个编程小白的日常分享,第一章操作系统的基本特征
+
+并发：是指两个或多个活动在同一给定的时间间隔中进行。
+
+
+
+共享 ：是指计算机系统中的资源被多个进程所共用。
+异步：进程以不可预知的速度向前推进
+虚拟:把一个物理上的实体,"> 
+    <meta name="author" content="元元学长"> 
+    <link rel="alternative" href="atom.xml" title="树叶飞舞之处，火亦生生不息" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">树叶飞舞之处，火亦生生不息</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://yyxuezhang.top"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">操作系统</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">操作系统</h1>
+        <div class="stuff">
+            <span>十二月 12, 2021</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h2 id="操作系统的基本特征"><a href="#操作系统的基本特征" class="headerlink" title="操作系统的基本特征"></a>操作系统的基本特征</h2><blockquote>
+<ul>
+<li><code>并发</code>：是指两个或多个活动在同一给定的时间间隔中进行。</li>
+</ul>
+</blockquote>
+<ul>
+<li><code>共享</code> ：是指计算机系统中的资源被多个进程所共用。</li>
+<li><code>异步</code>：进程以不可预知的速度向前推进</li>
+<li><code>虚拟</code>:把一个物理上的实体变成若干个逻辑上的对应物。</li>
+<li><h3 id="最基本特征：并发、共享（两者互为存在条件）"><a href="#最基本特征：并发、共享（两者互为存在条件）" class="headerlink" title="最基本特征：并发、共享（两者互为存在条件）"></a>最基本特征：并发、共享（两者互为存在条件）</h3></li>
+</ul>
+<h2 id="进程调度"><a href="#进程调度" class="headerlink" title="进程调度"></a>进程调度</h2><h3 id="处理机调度"><a href="#处理机调度" class="headerlink" title="处理机调度"></a>处理机调度</h3><ul>
+<li><p>概念</p>
+<blockquote>
+<p>是对处理机进行分配，即从就绪队列中按照一定的算法（公平、高效）选择一个进程并将处理机分配给它运行，以实现进程并发地执行。</p>
+</blockquote>
+</li>
+<li><p>分类</p>
+<blockquote>
+<ul>
+<li>高级调度(作业调度)(次数少)</li>
+</ul>
+</blockquote>
+<ul>
+<li>中级调度(内存对换)(次数中等)</li>
+<li>低级调度(进程调度)(次数最多)</li>
+</ul>
+</li>
+<li><p>调度方法</p>
+<blockquote>
+<ul>
+<li>剥夺式(谁重要让谁去)</li>
+</ul>
+</blockquote>
+</li>
+<li><p>非剥夺式(谁先来让谁先完成，后来的排队)</p>
+</li>
+<li><p>调度准则</p>
+<blockquote>
+<ul>
+<li>CPU利用率(越高越好)<br><br></li>
+</ul>
+</blockquote>
+</li>
+<li><p>系统吞吐率(单位时间内CPU完成作业的数目)<br><br></p>
+</li>
+<li><p>周转时间(完成时间-提交时间=等待时间+服务时间)</p>
+<blockquote>
+<blockquote>
+<ul>
+<li>平均周转时间 = 各作业周转时间之和/作业数目</li>
+</ul>
+</blockquote>
+</blockquote>
+<ul>
+<li>带权周转时间 = 作业周转时间/作业实际运行的时间 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= &nbsp;&nbsp;&nbsp;(作业完成时间点 - 作业提交时间点)/作业实际运行时间</li>
+<li>平均带权周转时间 = 各作业带权周转时间之和/作业数目</li>
+</ul>
+</li>
+<li><p>等待时间(<b>等待时间，是指进程/作业处于等待处理机状态的时间之和</b>，显然，等待时间越长，用户满意度越低。公式如下)</p>
+<blockquote>
+<p>等待时间 = 周转时间 = 运行时间<br>操作系统依靠<b>平均等待时间</b>来评价整体性能  </p>
+<blockquote>
+<p>平均等待时间 = 等待时间 / 总数</p>
+</blockquote>
+</blockquote>
+</li>
+<li><p>响应时间</p>
+<blockquote>
+<p>对于计算机用户来说，他们希望自己提交的请求尽早的开始被系统服务、回应，于是人们提出响应时间来衡量这个尺度。<br><b>响应时间，指从用户提交请求到首次产生响应所用的时间。</b></p>
+</blockquote>
+</li>
+<li><p>算法</p>
+<blockquote>
+<ul>
+<li>先来先服务</li>
+</ul>
+</blockquote>
+</li>
+<li><p>短作业优先</p>
+</li>
+<li><p>优先级调度算法</p>
+</li>
+<li><p>高响应比优先调度算法  </p>
+<blockquote>
+<p>（运行时间 + 等待时间）/等待时间<br>也就是说响应比一定是大于一的</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>时间片轮转</li>
+<li>多级反馈队列调度算法</li>
+</ul>
+<h4 id="处理机调度总结"><a href="#处理机调度总结" class="headerlink" title="处理机调度总结"></a>处理机调度总结</h4><p><img src="https://t1.picb.cc/uploads/2021/10/20/wRpzka.png" alt="wRpzka.png"></p>
+<h3 id="进程同步"><a href="#进程同步" class="headerlink" title="进程同步"></a>进程同步</h3><ul>
+<li>引入原因<blockquote>
+<p>协调进程之间的相互制约关系</p>
+</blockquote>
+</li>
+<li>制约关系<blockquote>
+<ul>
+<li>同步  (也称为直接制约关系，是指为完成某种任务而建立的两个或多个进程，这些进程因为需要在某些位置上协调他们的工作次序而等待、传递信息所产生的制约关系。)</li>
+</ul>
+</blockquote>
+</li>
+<li> 互斥 （也称为简介制约关系。当时一个进程进入临界区使用临界资源时，另一个进程必须等待，当占用临界资源的进程退出临界区后，另一个进程才允许去访问次临界资源。）</li>
+<li>临界资源<blockquote>
+<p>一次仅允许一个进程使用的资源（打印机，共享缓冲区，共享变量，公用队列）</p>
+</blockquote>
+</li>
+<li>临界区<blockquote>
+<p>在每个进程中访问临界资源的<code>那段程序</code></p>
+</blockquote>
+</li>
+<li>临界区互斥<blockquote>
+<ul>
+<li>原则<blockquote>
+<p><code>空闲让进</code>：如果有若干个经常要求进入空闲时间的临界区，一次仅运允许一个进程进入。<br><code>忙则等待</code>：任何时候，处于临界区内的进程不可多于一个。如已有进程进入自己的临界区，则其它所有试图进入临界区的进程必须等待。<br><code>有限等待</code>:进入临界区的进程要在有限和司机爱你内退出，一遍其它进程能及时进入自己的临界区。<br><code>让权等待</code>:如果进程不能进入自己的临界区，则应让出CPU，避免进程出现“忙等”现象。</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</li>
+<li>基本方法  <blockquote>
+<blockquote>
+<p>信号量：利用PV操作实现互斥</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h3 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h3><p><code>易错点</code>：导致进程进入阻塞态的事件：</p>
+<blockquote>
+<p>1.当进程等待临界资源(不包括处理机)或等待I/O完成，都会进入阻塞态<br> 2.系统将CPU分配给高优先权的进程，会使当前进程变为就绪状态<code>不会导致进程的阻塞</code>。</p>
+</blockquote>
+<h3 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h3><ul>
+<li>产生的原因<blockquote>
+<p>1.非剥夺资源的竞争 和 2.进程的不恰当推进顺序（与饥饿的区别）</p>
+</blockquote>
+</li>
+<li>定义<blockquote>
+<p>多个进程因为竞争资源而造成的一种僵局，如果没有外力，这些进程将无法推进</p>
+</blockquote>
+</li>
+<li>解决办法<blockquote>
+<ul>
+<li>预防死锁  <blockquote>
+<p>1.破坏互斥条件  </p>
+</blockquote>
+</li>
+</ul>
+<p>2.破坏不剥夺条件<br>3.破坏请求和保持条件<br>4.破坏循环等条件</p>
+</blockquote>
+</li>
+<li>避免死锁<blockquote>
+<blockquote>
+<p>1.安全状态<br>2.<b><code>银行家算法</code></b></p>
+</blockquote>
+</blockquote>
+</li>
+<li>检测死锁:利用死锁原理</li>
+<li>解除死锁<blockquote>
+<blockquote>
+<p>资源剥夺法<br>撤销进程法<br>进程回退发</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h2 id="程序执行过程的跟踪"><a href="#程序执行过程的跟踪" class="headerlink" title="程序执行过程的跟踪"></a>程序执行过程的跟踪</h2><blockquote>
+<ul>
+<li>需要注意的是，在dos中运行程序时，是command将程序加载入内存；</li>
+</ul>
+</blockquote>
+<ul>
+<li>所以程序运行结束后返回到command中，而在这里是debug将程序加载入内存，所以程序运行结束后要返回到Debug中。</li>
+</ul>
+<h1 id="模拟"><a href="#模拟" class="headerlink" title="模拟"></a>模拟</h1><p>进程之间存在着哪几种制约关系</p>
+<blockquote>
+<p>进程间存在着两种相互制约的关系：直接制约关系（即同步问题）和间接制约关系（即互斥问题）。同步问题是存在逻辑关系的进程之间相互等待产生的制约关系，互斥问题是相互无逻辑关系的进程间竞争使用相同的资源所发生的制约关系。</p>
+</blockquote>
+<p>请用信号量机制解决以下的“过独木桥”问题：（8分）</p>
+<pre><code>   同一方向的行人可连续过桥，当某一方向有人过桥时，另一方向的行人必须等待；
+
+   当某一方向无人过桥时，另一方向的人可以过桥
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">对于A方向：</span><br><span class="line">P（SA）</span><br><span class="line">IF (countA=0)</span><br><span class="line">THEN P(metux)</span><br><span class="line">countA=countA+1</span><br><span class="line">V(SA)</span><br><span class="line">过桥</span><br><span class="line">P(SA)</span><br><span class="line">countA=countA-1</span><br><span class="line">IF(countA=0)</span><br><span class="line">THEN V(metux)</span><br><span class="line">V(SA)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">对于B方向：</span><br><span class="line">P（SB）</span><br><span class="line">IF (countB=0)</span><br><span class="line">THEN P(metux)</span><br><span class="line">countB=countB+1</span><br><span class="line">V(SB)</span><br><span class="line">过桥</span><br><span class="line">P(SB)</span><br><span class="line">countB=countB-1</span><br><span class="line">IF(countB=0)</span><br><span class="line">THEN V(metux)</span><br><span class="line">V(SB)</span><br></pre></td></tr></table></figure>
+<p>除了信号量机制，还有哪些其他方法可以解决同步和互斥问题，各有什么优势</p>
+<blockquote>
+<p>开锁加锁</p>
+</blockquote>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='https://c.y.qq.com/base/fcgi-bin/u?__=FO1UVRP'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='https://c.y.qq.com/base/fcgi-bin/u?__=apT5IzV'></li>
+                        
+                    
+                        
+                            <li title='2' data-url='https://c.y.qq.com/base/fcgi-bin/u?__=MBGae4C'></li>
+                        
+                    
+                        
+                            <li title='3' data-url='https://c.y.qq.com/base/fcgi-bin/u?__=2PVzD'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+<script src="/js/beijing.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
