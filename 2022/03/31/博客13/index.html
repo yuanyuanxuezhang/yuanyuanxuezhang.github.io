@@ -66,6 +66,9 @@
 <p>这段代码的用处是自动排序，所以在引入这段代码之后还需要在表格中引入该id，也就是给出一个空列然后对于空列进行排序。具体代码如下</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#123; </span><br><span class="line">    <span class="attr">field</span>: <span class="string">&#x27;id&#x27;</span>, </span><br><span class="line">    <span class="attr">title</span>: <span class="string">&#x27;序号&#x27;</span>, </span><br><span class="line">    <span class="attr">toolbar</span>: <span class="string">&#x27;#index&#x27;</span>, </span><br><span class="line">    <span class="attr">width</span>: <span class="number">60</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
 <p>其中toolbar绑定的是必须是上面的id值</p>
+<h3 id="android开发突然运行出错"><a href="#android开发突然运行出错" class="headerlink" title="android开发突然运行出错"></a>android开发突然运行出错</h3><p>出现报错</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Installed Build Tools revision <span class="number">32.0</span><span class="number">.0</span> is corrupted. Remove and install again using the SDK Manager.</span><br></pre></td></tr></table></figure>
+<p>解决办法是修改配置文件build.gradle文件中的32.0.0将其改为30.0.3<br>修改完了之后重新运行即可</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
